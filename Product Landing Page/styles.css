@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid; */
+}
+
+.logo-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: gray;
+}
+
+header{
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    /* height: 0; */
+}
+
+nav {
+    /* border: 1px solid black; */
+    font-family: Poppins;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-side {
+    display: inline;
+    padding: 0 40px;
+}
+
+.star-logo {
+    width: 15px;
+    margin-top: 6px;
+    padding-left: 4px;
+}
+
+.product-name {
+    margin-left: 10px;
+    font-family: Poppins;
+    margin-bottom: 30px;
+}
+
+main{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#plans, #whyus, #contact {
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: Poppins;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.hero-text {
+    padding-bottom: 20px;
+}
+
+.submit-button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+    font-family: Poppins;
+}
+
+
+#email {
+    width: 256px;
+    height: 24px;
+}
+
+form {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-family: Montserrat;
+}
+
+.sect-header {
+    padding-bottom: 10px;
+}
+
+.plan-desc {
+    padding-bottom: 10px;
+    font-size: medium;
+}
+
+.plans {
+    /* border: 1px solid black; */
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+}
+
+.plans-box {
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 250px;
+    height: 500px;
+    display: block;
+    border-radius: 12px;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.plan-features {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.price {
+    padding-top: 25px;
+    font-size: 42px;
+}
+
+.plan-benefits {
+    font-size: 20px;
+}
+
+.plan-benefits li {
+    padding: 8px 0;
+}
+
+.sect-desc {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .plans {
+        display: block;
+    }
+
+}

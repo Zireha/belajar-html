@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brief Documentation of C++</title>
+    <nav id="navbar">
+        <header class="navhead">Navigation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction_to_C++">Introduction to C++</a></li>
+            <li><a class="nav-link" href="#Description">Description</a></li>
+            <li><a class="nav-link" href="#Code_Example">Code Example</a></li>
+            <li><a class="nav-link" href="#Code_Example_2">Code Example 2</a></li>
+            <li><a class="nav-link" href="#References">References</a></li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_C++">
+            <header class="introduction">Introduction to C++</header>
+            <p>C++ is a middle level language that used to create a high performance. It was created by Bjarne
+                Stroustrup. Most game are developed using this language. C++ is an object oriented programming language
+                which gives a clear structure to programs and allow code to be reused
+            </p>
+        </section>
+        <section class="main-section" id="Description">
+            <header class="description">Description</header>
+            <p>C++ is a statically typed, compiled, general-purpose programming language that supports procedural,
+                object-oriented, and generic programming. It was developed by Bjarne Stroustrup as an extension to the C
+                language. C++ gives programmers a high level of control over system resources and memory. The language
+                is considered a middle-level language, as it comprises a combination of both high-level and low-level
+                language features. It’s a cross-platform language that can be used to create high-performance
+                applications. C++ is one of the world’s most popular programming languages and can be found in today’s
+                operating systems, Graphical User Interfaces, and embedded systems. C++ is an object-oriented
+                programming language which gives a clear structure to programs and allows code to be reused, lowering
+                development costs. As of the latest C++ standard, C++ supports both manifest and inferred typing. C++ is
+                a language that expects the programmer to know what he or she is doing, but allows for incredible
+                amounts of control as a result.</p>
+        </section>
+        <section class="main-section" id="Code_Example">
+            <header class="code_example">Code Example</header>
+            <p>Before we head to the code example, here are some of C++ basic syntax that can be useful</p>
+            <ol class="code_syntax_example">
+                <li>for</li>
+                <li>while</li>
+                <li>if</li>
+                <li>cout</li>
+                <li>cin</li>
+            </ol>
+            <p>Here are some example code from C++</p>
+            <div class="code">
+
+                <code>#include &lt;iostream&gt; <br>
+                    using namespace std; <br>
+    
+                    int main(){ <br> 
+                    &nbsp; &nbsp; cout<<"hello world";
+                    <br> }
+                </code>
+
+            </div>
+
+            <p>The code above will print "hello world" to the console.</p>
+
+            <div class="code">
+                <code>
+                    #include &lt;iostream&gt; <br>
+                    using namespace std; <br>
+                    <br>
+                    int main() {
+                        <br>
+                        <br>
+                        &nbsp;for(int i = 1; i <= 10; i++) { <br>
+                            &nbsp; &nbsp;cout << i << endl; <br>
+                        &nbsp;} <br>
+                        &nbsp; return 0; <br>
+                    }
+                </code>
+            </div>
+
+            <p>The output from the code above will print number from 0 to 10 using for loop.</p>
+
+            <div class="code">
+                <code>
+                    #include &lt;iostream&gt; <br>
+                    using namespace std; <br>
+                    <br>
+                    int main() {
+                        <br>
+                        <br>
+                        &nbsp; int i = 1; <br>
+                        &nbsp; while(i <= 10) { <br>
+                            cout << i << endl;
+                        <br>
+                    &nbsp; &nbsp;}
+                        <br>}
+                </code>
+            </div>
+
+            <p>Code above will output the same as the code that uses for loop but the code above uses while instead of
+                for loop.</p>
+        </section>
+        <section class="main-section" id="Code_Example_2">
+            <header class="code_example_2">Code Example 2</header>
+            <p>Here's another example of code. The code provided below will likely a bit advanced.</p>
+
+            <div class="code">
+                <code>
+                    #include &lt;iostream&gt; <br>
+                    using namespace std; <br>
+                    <br>
+                    int main() {
+                        <br>
+                        <br>
+                        for(int i = 0; i < 20; i++) { <br>
+                            &nbsp;&nbsp;if (i % 2 == 0) { <br> 
+                                &nbsp;&nbsp;&nbsp;&nbsp;cout << i << "is even" << endl; <br>
+                                &nbsp;&nbsp;} else { <br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;cout << i << "is odd" << endl; <br>
+                                &nbsp;&nbsp;} <br>
+                                &nbsp;return 0;
+                    <br>}
+                </code>
+            </div>
+                <p>Code above will checks whether a number is an even number or an odd number.</p>
+            <div class="code">
+                <code>
+                    #include &lt;iostream&gt; <br>
+                    using namespace std; <br>
+                    <br>
+                    int main() { <br>
+                        <br>
+                        &nbsp; int x1, y1, x2, y2, d; <br>
+                        &nbsp; cout<<"Input the coordinates respectively (x1, y1, x2, y2): " &lt;&lt; endl; <br>
+                        &nbsp; cin >> x1 >> y1 >> x2 >> y2; <br>
+                        &nbsp; d = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2)); <br>
+                        &nbsp; cout<<"The distance between (x1, y1) and (x2, y2) is: "<< d << endl; <br> <br>
+                        &nbsp; return 0;
+                        <br>}
+                </code>
+            </div>
+
+            <p>The code above </p>
+        </section>
+        <section class="main-section" id="References">
+            <header class="cpp_reference">References</header>
+            <p><a href="https://www.w3schools.com/cpp/cpp_intro.asp">https://www.w3schools.com/cpp/cpp_intro.asp</a></p>
+        </section>
+    </main>
+</body>
+
+</html>
