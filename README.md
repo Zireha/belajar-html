@@ -1,2 +1,1 @@
-bang jali lagi ngepel
-orang ini baru belajar html
+gausah dibaca juga sih, gada yang penting disini
