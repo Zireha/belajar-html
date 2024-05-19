@@ -1,0 +1,119 @@
+:root {
+    --font-1: "Hind Vadodara";
+    --font-2: "Open Sans";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    color:gray;
+    font-size: 26px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-family: var(--font-2);
+    background-color: black;
+}
+
+nav {
+    width: 50%;
+    max-width: 500px;
+    height: 50px;
+    color: wheat;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    font-size: 20px;
+}
+
+nav > ul > li {
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+.main {
+    margin: 40px 40px 40px 40px;
+    border: 1px solid black;
+}
+
+.shape {
+    border: 1px solid transparent;
+    width: 600px;
+    height: 600px;
+    margin: 80px auto auto auto;
+}
+
+.welcome-section {
+    background-color: #FFC300;
+    margin-top: -20px;
+    height: 685px;
+}
+
+.square {
+    background-color: blue;
+    height: 120px;
+    width: 120px;
+    margin: 240px 180px auto;
+    position: absolute;
+    z-index: 4;
+
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 79px solid transparent;
+    border-right: 79px  solid transparent;
+    border-top: 80px solid transparent;
+    border-bottom: 130px solid #931AF2;
+    /* margin: 40px 240px 40px; */
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 240px;
+    z-index: 3;
+}
+
+.circle {
+    border: 1px solid black;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    margin-left: 230px;
+    margin-top: 135px;
+    background-color: #000814;
+    z-index: 2;
+}
+
+.welc-text {
+    font-family: var(--font-1);
+    margin: 116px auto auto auto;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+
