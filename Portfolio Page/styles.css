@@ -148,9 +148,12 @@ nav > ul > li {
     background-color: white;
 }
 
-.cards {
+.cards-container {
     border: 1px solid black;
     margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card-child {
@@ -197,3 +200,15 @@ nav > ul > li {
     font-size: 32px;
 }
 
+.tba {
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: 195px;
+    color: white;
+}
+
+.blank {
+    background-color: #0075E2;
+    padding-top: 6px;
+    border-radius: 6% 6% 0% 0%;
+}
