@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -18,9 +19,9 @@
         <h2 class="btn-home">
 
         </h2>
-        <nav>
+        <nav id="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#welcome-section">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -29,17 +30,17 @@
     </header>
 
     <main>
-        <section class="hero welcome-section" id="home">
+        <section class="hero welcome-section" id="welcome-section">
             <div class="shape">
                 <div class="square"></div>
                 <div class="triangle"></div>
                 <div class="circle"></div>
                 <div class="welcome-text">
-                    <h2 class="welc-text">Helow, Welcome</h2>
+                    <h1 class="welc-text">Helow, Welcome</h1>
                 </div>
             </div>
         </section>
-        <section class="projects" id="projects">
+        <section class="project-tile projects" id="projects">
             <h2 class="proj-text sect-head">
                 Projects
             </h2>
@@ -48,7 +49,7 @@
                 <hr class="line2">
             </div>
 
-            <div class="cards-container">
+            <div class="project-tile cards-container">
                 <div class="card-child">
                     <div class="img-container">
                         <img src="assets/bgril.png" alt="bg-game-proj">
@@ -85,10 +86,39 @@
             </div>
             <div class="abt-container">
                 <div class="img-abt">
-                    <img src="/assets/sigmaskibidi.jpg" alt="creator pic" class="abt-img" width="225" height="400">
+                    <img src="C:\Users\LENOVO\Documents\html practice\Portfolio Page\assets\sigmaskibidi.jpg" alt="creator pic" class="abt-img" width="225" height="400">
                 </div>
                 <div class="img-desc">
                     <p class="owner-desc">Cheva Wahyu Noerhudha. Born Javanese and raised in the middle of vast-swampy land in Central Borneo. Currently majoring in Informatics Engineering at Universitas Negeri Semarang. Known by his friends as a weeb daydreamer -though his face isn’t weeb look like.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contact">
+            <h2 class="sect-head about-head">Contact</h2>
+            <div class="lines">
+                <hr class="line1 abt-line">
+            </div>
+
+            <div class="socials">
+
+                <p class="social-desc">
+                    Feel free to reach me out! Don’t be shy. I will reply as soon as I can
+                </p>
+                <div class="social-medias">
+
+                    <div class="discord">
+                        <i class="fa-brands fa-discord icons"></i><p class="social-username discord-username"><a target="_blank" id="profile-link" href="https://discord.com/users/267447300995940362">szrh</a></p>
+                    </div>
+
+                    <div class="github">
+                        <i class="fa-brands fa-github icons"></i><p class="social-username github-username"><a target="_blank" id="profile-link" href="https://github.com/Zireha/">Zireha</a></p>
+                    </div>
+
+                    <div class="email">
+                        <i class="fa-solid fa-envelope icons"></i><p class="social-username email-username">cheva.wahyu@gmail.com</p>
+                    </div>
+
                 </div>
             </div>
         </section>
