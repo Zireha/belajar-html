@@ -1,0 +1,21 @@
+h1 {
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+body {
+    margin: auto;
+    text-align: center;
+
+}
+
+.box {
+    border: 1px solid black;
+    margin: 300px 400px;
+}
+
+#text-input {
+    height: 120%;
+    width: 80%;
+    padding-bottom: 20px;
+}
