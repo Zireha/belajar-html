@@ -6,14 +6,15 @@ const input = document.getElementById("text-input")
 
 function checkPalindrome(words){
 
-  const original = words
-  const reversed = words.split("").reverse().join("");
+
+  let original = words.toLowerCase();
+  let reversed = words.toLowerCase().split("").reverse().join("");
 
   console.log(original)
   if(original == reversed){
-    return "palindrome";
+    return "a palindrome";
   } else {
-    return "not palindrome";
+    return "not a palindrome";
   }
 };
 
@@ -28,5 +29,11 @@ function obtainResult(word){
 };
 checkBtn.addEventListener("click", (event) =>{
   event.preventDefault();
+
+  if(input.value == ""){
+    alert("Please input a value");
+    return;
+  }
+
   obtainResult(input.value)
 });
