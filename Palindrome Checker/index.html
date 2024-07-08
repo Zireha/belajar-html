@@ -14,17 +14,18 @@
 <body>
     <div class="h-screen flex items-center justify-center">
         <div class="box pt-10 title-head mx-20 font-sans w-3/6 h-1/5 p-4 mx-auto text-center border">
-            <form action="">
+            <form action="" class="mb-6">
                 <h1 class="title pb-2">Palindrome Checker</h1>
                 <input type="text" name="text-input" id="text-input" class="border">
-                <button class="border text-blue-700" type="submit" name="text-input" id="check-btn">Check</button>
-                <br>
-                <br>
+                <button class="border text-blue-700" type="submit" name="text-input" id="check-btn" onclick="obtainResult">Check</button>
+                <!-- <br>
+                <br> -->
             </form>
             <div id="result">The result will appear here</div>
         </div>
     </div>
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
 </body>
 </html>

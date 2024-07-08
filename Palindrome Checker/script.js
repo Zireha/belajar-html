@@ -11,9 +11,9 @@ function checkPalindrome(words){
 
   console.log(original)
   if(original == reversed){
-    return "is palindrome";
+    return "palindrome";
   } else {
-    return "is not palindrome";
+    return "not palindrome";
   }
 };
 
@@ -22,8 +22,11 @@ function removeSpace(textInput){
 };
 
 function obtainResult(word){
-  return checkPalindrome(removeSpace(word))
+  let res = checkPalindrome(removeSpace(word))
+  const resultText = `${input.value} is ${res}`;
+  result.innerText = resultText;
 };
-
-let palindromeResult = checkBtn.addEventListener("click", obtainResult(input.value))
-result.innerHTML = `${input.value} is ${palindromeResult}`
+checkBtn.addEventListener("click", (event) =>{
+  event.preventDefault();
+  obtainResult(input.value)
+});
