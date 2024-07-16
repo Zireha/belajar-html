@@ -8,16 +8,20 @@
     <title>Integer to Roman Converter</title>
 </head>
 
-<body class="bg-slate-300">
-    <div class="input-container">
-        <div class="card rounded-md border-solid border-8 border-sky-500 bg-slate-400 m-96 my-56 h-48 font-serif font-semibold text-3xl text-center bg-center ">
-            <form action="" class="block">
-                <h1 class="">Integer to Roman Converter</h1>
-                <input id="input" type="number" class="mt-9">
-                <button>Convert</button>
-            </form>
+<body id="main" class="bg-slate-950 flex justify-center items-center h-screen flex-col">
+    <!-- <div class="input-container bg-red-300 flex h-full w-full justify-center items-center"> -->
+        <div class="card rounded-md border-solid border-8 h-[44%] min-h-[300px] flex border-sky-500 bg-slate-600 font-serif font-semibold text-3xl text-center bg-center ">
+            <div class="flex flex-col px-[2%] h-full justify-around py-[4%]">
+                <h1 class="text-slate-200">Integer to Roman Converter</h1>
+                <input id="number" type="number" class="mx-[6%] rounded-sm">
+                <button id="convert-btn" class="shadow-lg bg-sky-500 w-fit self-center px-4 rounded-md text-white font-medium">Convert</button>
+            </div>
         </div>
-    </div>
+        <div id="output-container" class="output-container hidden py-4 w-1/4 h-fit justify-center mt-4 rounded-md border-solid border-8 flex border-sky-500 bg-slate-600 font-serif font-semibold text-3xl text-center bg-center">
+            <p id="output" class=" text-2xl output text-white text-center"></p>
+        </div>
+    <!-- </div> -->
+     <script src="roman.js"></script>
 </body>
 
 </html>
